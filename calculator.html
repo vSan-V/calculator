@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+        background-image: url("https://raw.githubusercontent.com/Pradeepok1234/HTML/main/CLU.jpg");
+       
+    }
+        h1{
+            text-align: center;
+        }
+        div{
+        width: 400px;
+        height:300px;
+        border: solid black;
+        background-color: rgb(8, 231, 45);
+        position: relative;
+        border-radius:40px;
+        margin: auto;
+        
+        }
+        button{
+        width: auto;
+        height:auto;
+        margin-right: 10px;
+        background-color: aqua;
+        border: solid black;
+        }
+        input{
+        width: auto;
+        height:auto;
+        border: solid black;
+        margin-right: 10px;
+        }
+    </style>
+</head>
+<body style="background-color: darkred;">
+    
+    <div class="body">
+    <h1><u>Simple Calculator</u></h1>
+    <label for="n1"><b>Enter the first Number :</b></label>
+    <input id="i1" type="Number"placeholder="Enter the Number"id="n1"><br><br>
+    <label for="n2"><b>Enter the Second Number :</b></label>
+    <input id="i2" type="Number"placeholder="Enter the Number"id="n2"><br><br>
+
+    <button onclick="add()"><b>+</b></button>
+    <button onclick="sub()"><b>-</b></button>
+    <button onclick="mul()"><b>*</b></button>
+    <button onclick="div()"><b>/</b></button><br><br>
+    <label for="i3"><b>Result</b></label>
+    <input id="r" type="number"placeholder="result"id="i3">
+    </div>
+    
+    <script>
+        function add()
+        {
+        let num1=Number(document.getElementById('i1').value);
+        let num2=Number(document.getElementById('i2').value);
+        let result=num1+num2;
+        document.getElementById('r').value=result;
+    }
+    function sub()
+        {
+        let num1=Number(document.getElementById('i1').value);
+        let num2=Number(document.getElementById('i2').value);
+        let result=num1-num2;
+        document.getElementById('r').value=result;
+    }
+    function mul()
+        {
+        let num1=Number(document.getElementById('i1').value);
+        let num2=Number(document.getElementById('i2').value);
+        let result=num1*num2;
+        document.getElementById('r').value=result;
+    }
+    function div()
+        {
+        let num1=Number(document.getElementById('i1').value);
+        let num2=Number(document.getElementById('i2').value);
+        let result=num1/num2;
+        document.getElementById('r').value=result;
+    }
+</script> 
+</body>
+</html>
